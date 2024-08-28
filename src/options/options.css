@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-b from-[#0F172A] to-[#7A9BE9];
+}
+
+.heading-line {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 100%;
+  height: 0.3em;
+  background-color: #7a9be9;
+  z-index: -1;
+}

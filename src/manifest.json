@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Don't save to history",
+    "version": "1.0.1",
+    "action" : {
+      "default_popup": "popup.html",
+      "default_title": "Don't save to history",
+      "default_icon" : "192-history-no.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "history"
+  ],
+    "description": "Make a list of websites that will not be saved to history",
+    "icons": {
+      "16": "16-history-no.png",
+      "32": "32-history-no.png",
+      "48": "48-history-no.png",
+      "192": "192-dont-save-to-history.png"
+    },
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    }
+
+  }
